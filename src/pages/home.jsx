@@ -1,6 +1,6 @@
 import React from 'react'
 import Navegation from '../components/Navegation'
-import Arrow from '../assets/arrow.svg'
+// import Arrow from '../assets/arrow.svg'
 
 const Home = () => {
     return (
@@ -12,7 +12,7 @@ const Home = () => {
                     <h1 className='text-6xl font-bold text-white'>Live the Experience to the Fullest with Us</h1>
 
                     <a className='bg-[#0874bc] text-white w-[250px] flex justify-center gap-4 font-bold py-2 rounded-xl' href="">
-                        Explore Packages <img className='w-[20px]' src={Arrow} alt="Right Arrow" />
+                        Explore Packages <img className='w-[20px]' src="" alt="Right Arrow" />
                     </a>
                 </div>
             </section>

@@ -1,12 +1,12 @@
 import React from 'react'
-import Logo from '../assets/logo.webp'
-import Bag from '../assets/bag.svg'
+// import Logo from '../assets/logo.webp'
+// import Bag from '../assets/bag.svg'
 
 const Navegation = () => {
     return (
         <header className='flex justify-between items-center px-12 py-2 fixed w-screen bg-white'>
             <a href="">
-                <img className='w-[150px]' src={Logo} alt="Destiny & Travel Logo" />
+                <img className='w-[150px]' src="" alt="Destiny & Travel Logo" />
             </a>
 
             <div className='flex items-center gap-10'>
@@ -20,7 +20,7 @@ const Navegation = () => {
                 </nav>
 
                 <a href="">
-                    <img className='w-[35px]' src={Bag} alt="Bag Logo" />
+                    <img className='w-[35px]' src="" alt="Bag Logo" />
                 </a>
             </div>
         </header>
