@@ -6,10 +6,6 @@ import './another.css'
 import TextStyle from '../components/TextStyle'
 
 const Home = () => {
-    const circleClipPathStyle = {
-        clipPath: 'circle(122% at 0 100%)',
-    };
-
     return (
         <main>
             <Navegation />
