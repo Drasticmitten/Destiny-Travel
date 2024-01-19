@@ -56,6 +56,17 @@ const Home = () => {
                     flexdirection='right' 
                 />
             </section>
+
+            <section className='h-screen w-full p-20 flex justify-between'>
+                <div className='w-2/5 flex flex-col justify-center gap-2 text-start'>
+                    <h3 className='font-bold uppercase text-[#888484]'>Testimonials</h3>
+                    <h1 className='text-6xl font-bold text-[#083454]'>What People Say About Us?</h1>
+                </div>
+
+                <div className='w-2/5 flex flex-col justify-center h-full'>
+                    
+                </div>
+            </section>
         </main>
     )
 }
