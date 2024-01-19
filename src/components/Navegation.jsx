@@ -4,7 +4,7 @@ import Bag from '../assets/bag.svg'
 
 const Navegation = () => {
     return (
-        <header className='flex justify-between items-center px-12 py-2 fixed w-screen bg-white'>
+        <header className='flex justify-between items-center px-12 py-2 fixed w-screen bg-white z-10'>
             <a href="/">
                 <img className='w-[150px]' src={Logo} alt="Destiny & Travel Logo" />
             </a>

@@ -9,6 +9,7 @@ import Housing from '../assets/services/housing.svg';
 
 const Card = (props) => {
     const { imgsrc, title, description } = props;
+    
     let dynamicImage;
 
     if (imgsrc === 'Beach') {
@@ -31,9 +32,9 @@ const Card = (props) => {
                 {dynamicImage}
             </div>
 
-            <div className='text-end'>
+            <div className='text-end w-8/12'>
                 <h2 className='text-xl font-bold'>{title}</h2>
-                <p>{description}</p>
+                <p className='whitespace-pre-line'>{description}</p>
             </div>
         </div>
     );
