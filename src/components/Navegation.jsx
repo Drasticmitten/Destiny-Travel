@@ -21,7 +21,7 @@ const Navigation = () => {
                     </ul>
                 </nav>
 
-                <Link to="/">
+                <Link to="/cartpage">
                     <img className='w-[35px]' src={Bag} alt="Bag Logo" />
                 </Link>
             </div>

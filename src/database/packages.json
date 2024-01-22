@@ -10,5 +10,19 @@
             "Transportation",
             "Acommodation"
         ]
+    },
+
+    {
+        "id": 2, 
+        "title": "Package Name 2", 
+        "s_description": "Short description",
+        "l_description": "Long description",
+        "price": 140,
+        "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
+        "packageServices": [
+            "Transportation",
+            "Acommodation"
+        ]
     }
+    
 ]

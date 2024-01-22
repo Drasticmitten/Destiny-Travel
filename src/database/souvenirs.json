@@ -1,0 +1,13 @@
+[
+    { 
+        "id": 1, 
+        "title": "Souvernir Name", 
+        "s_description": "Short description",
+        "l_description": "Long description",
+        "price": 20,
+        "image": "",
+        "SouvenirTag": [
+            "Selfcare"
+        ]
+    }
+]

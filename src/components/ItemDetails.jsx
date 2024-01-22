@@ -4,6 +4,14 @@ import Navegation from './Navegation'
 
 import packagesData from '../database/packages.json';
 
+
+function addtoCart(selectedPackage) {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push(selectedPackage);
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+
 const ItemDetails = () => {
     const { id } = useParams();
     const [selectedPackage, setSelectedPackage] = useState(null);
@@ -44,8 +52,10 @@ const ItemDetails = () => {
                                 Ask on WhatsApp
                             </button>
 
-                            <button className="bg-[#0874bc] text-white px-4 py-2 rounded-md font-bold">
-                                Add to Cart
+                            <button 
+                                onClick={() => addtoCart(selectedPackage)}
+                                className="bg-[#0874bc] text-white px-4 py-2 rounded-md font-bold">
+                                    Add to Cart
                             </button>
                         </div>
                     </div>

@@ -5,6 +5,7 @@ import Packages from './pages/packages';
 import Trips from './pages/trips';
 import Souvenirs from './pages/souvenirs';
 import ItemDetails from './components/ItemDetails';
+import Cartpage from './pages/cartpage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/trips/:id" element={<ItemDetails />} />
         <Route path="/souvenirs" element={<Souvenirs />} />
         <Route path="/souvenirs/:id" element={<ItemDetails />} />
+        <Route path="/cartpage" element={<Cartpage />} />
       </Routes>
     </Router>
   );
