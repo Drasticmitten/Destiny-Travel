@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navegation from '../components/Navegation'
 import Footer from '../components/Footer'
-import ItemDetails from '../components/ItemDetails'
 
 
 const CartPage = () => {
