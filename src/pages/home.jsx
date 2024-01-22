@@ -4,6 +4,11 @@ import Arrow from '../assets/arrow.svg'
 import Card from '../components/Card'
 import './another.css'
 import TextStyle from '../components/TextStyle'
+import Whatsapp from '../assets/brandslogo/whatsapp.svg'
+import Gmail from '../assets/brandslogo/gmail.svg'
+import Facebook from '../assets/brandslogo/facebook.svg'
+import Instagram from '../assets/brandslogo/instagram.svg'
+import Footer from '../components/Footer'
 
 const Home = () => {
     return (
@@ -52,21 +57,45 @@ const Home = () => {
             <section className='vision p-20 h-screen w-full bg-[#0874bc]'>
                 <TextStyle 
                     title='Vision'
-                    description='To position ourselves as a leading company in tourism services in British Columbia, with expansion to other provinces of Canada and countries around the world, through partnerships with organizations that allow our economic and organizational growth in favour of the quality of service and needs of our customers.'
+                    description='To position ourselves as a leading company in tourism services in British Columbia, with expansion to other provinces of Canada and countries center the world, through partnerships with organizations that allow our economic and organizational growth in favour of the quality of service and needs of our customers.'
                     flexdirection='right' 
                 />
             </section>
-
-            <section className='h-screen w-full p-20 flex justify-between'>
-                <div className='w-2/5 flex flex-col justify-center gap-2 text-start'>
-                    <h3 className='font-bold uppercase text-[#888484]'>Testimonials</h3>
-                    <h1 className='text-6xl font-bold text-[#083454]'>What People Say About Us?</h1>
+            
+            <section id='contact' className='p-20 w-full flex gap-10'>
+                <div className='w-6/12 bg-langford bg-cover rounded-xl bg-right-bottom flex flex-col justify-center gap-5 text-center text-white'>
+                    <h1 className='text-5xl font-bold'>Peatt Road 2830</h1>
+                    <p className='text-xl font-bold'>British Columbia - Canada</p>
                 </div>
 
-                <div className='w-2/5 flex flex-col justify-center h-full'>
-                    
+                <div className='w-6/12'>
+                    <h1 className='text-3xl font-bold mb-8 text-center'>You can also contact us through the following social networks and media</h1>
+
+                    <div className='grid grid-cols-2 gap-5 items-center'>
+                        <a className='flex flex-col justify-center items-center gap-2' href="https://api.whatsapp.com/send?phone=12502179382" target='_blank'>
+                            <img src={Whatsapp} className='w-[30px]' alt="Whatsapp Logo" />
+                            <span>+1 250 217 9382</span>
+                        </a>
+
+                        <a className='flex flex-col justify-center items-center gap-2' href="https://www.instagram.com/destinyandtravelcanada/" target='_blank'>
+                            <img src={Instagram} className='w-[30px]' alt="Whatsapp Logo" />
+                            <span>@destinyandtravelcanada</span>
+                        </a>
+
+                        <a className='flex flex-col justify-center items-center gap-2' href="https://www.facebook.com/profile.php?id=61553222615647" target='_blank'>
+                            <img src={Facebook} className='w-[30px]' alt="Whatsapp Logo" />
+                            <span>Destiny & Travel</span>
+                        </a>
+
+                        <a className='flex flex-col justify-center items-center gap-2' href="mailto:destinytravelcanada@gmail.com" target='_blank'>
+                            <img src={Gmail} className='w-[30px]' alt="Whatsapp Logo" />
+                            <span>destinytravelcanada@gmail.com</span>
+                        </a>
+                    </div>
                 </div>
             </section>
+
+            <Footer />
         </main>
     )
 }
