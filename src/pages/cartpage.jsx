@@ -27,8 +27,8 @@ const CartPage = () => {
     };
 
     const sendtoWhats = () => {
-        const encodedNames = encodeCartItemNames().join('%0A');
-        window.open(`https://wa.me/573136308824?text=Hi%0Aim%0Ainterested%0Ain%0A${encodedNames}`, '_blank');
+        const encodedNames = encodeCartItemNames().join('-%0A');
+        window.open(`https://wa.me/573136308824?text=Hi%20Im%20interested%20in%20${encodedNames}`, '_blank');
     };
 
     if (!cartItems.length) {
