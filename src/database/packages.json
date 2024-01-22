@@ -1,0 +1,14 @@
+[
+    { 
+        "id": 1, 
+        "title": "Package Name", 
+        "s_description": "Short description",
+        "l_description": "Long description",
+        "price": 100,
+        "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
+        "packageServices": [
+            "Transportation",
+            "Acommodation"
+        ]
+    }
+]
