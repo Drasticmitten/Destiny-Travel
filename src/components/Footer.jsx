@@ -15,10 +15,10 @@ const Footer = () => {
                 </div>
 
                 <div className='flex gap-6'>
-                    <a className='bg-white p-4 rounded-full' href="https://api.whatsapp.com/send?phone=12502179382" target='_blank'><img src={Whatsapp} className='w-[25px]' alt="" /></a>
-                    <a className='bg-white p-4 rounded-full' href="https://www.instagram.com/destinyandtravelcanada/" target='_blank'><img src={Instagram} className='w-[25px]' alt="" /></a>
-                    <a className='bg-white p-4 rounded-full' href="https://www.facebook.com/profile.php?id=61553222615647" target='_blank'><img src={Facebook} className='w-[25px]' alt="" /></a>
-                    <a className='bg-white p-4 rounded-full' href="mailto:destinytravelcanada@gmail.com" target='_blank'><img src={Gmail} className='w-[25px]' alt="" /></a>
+                    <a className='bg-white p-4 rounded-full' href="https://api.whatsapp.com/send?phone=12502179382" target='_blank' rel='noopener noreferrer'><img src={Whatsapp} className='w-[25px]' alt="" /></a>
+                    <a className='bg-white p-4 rounded-full' href="https://www.instagram.com/destinyandtravelcanada/" target='_blank' rel='noopener noreferrer'><img src={Instagram} className='w-[25px]' alt="" /></a>
+                    <a className='bg-white p-4 rounded-full' href="https://www.facebook.com/profile.php?id=61553222615647" target='_blank' rel='noopener noreferrer'><img src={Facebook} className='w-[25px]' alt="" /></a>
+                    <a className='bg-white p-4 rounded-full' href="mailto:destinytravelcanada@gmail.com" target='_blank' rel='noopener noreferrer'><img src={Gmail} className='w-[25px]' alt="" /></a>
                 </div>
             </div>
 

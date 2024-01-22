@@ -72,22 +72,22 @@ const Home = () => {
                     <h1 className='text-3xl font-bold mb-8 text-center'>You can also contact us through the following social networks and media</h1>
 
                     <div className='grid grid-cols-2 gap-5 items-center'>
-                        <a className='flex flex-col justify-center items-center gap-2' href="https://api.whatsapp.com/send?phone=12502179382" target='_blank'>
+                        <a className='flex flex-col justify-center items-center gap-2' href="https://api.whatsapp.com/send?phone=12502179382" target='_blank' rel='noopener noreferrer'>
                             <img src={Whatsapp} className='w-[30px]' alt="Whatsapp Logo" />
                             <span>+1 250 217 9382</span>
                         </a>
 
-                        <a className='flex flex-col justify-center items-center gap-2' href="https://www.instagram.com/destinyandtravelcanada/" target='_blank'>
+                        <a className='flex flex-col justify-center items-center gap-2' href="https://www.instagram.com/destinyandtravelcanada/" target='_blank' rel='noopener noreferrer'>
                             <img src={Instagram} className='w-[30px]' alt="Whatsapp Logo" />
                             <span>@destinyandtravelcanada</span>
                         </a>
 
-                        <a className='flex flex-col justify-center items-center gap-2' href="https://www.facebook.com/profile.php?id=61553222615647" target='_blank'>
+                        <a className='flex flex-col justify-center items-center gap-2' href="https://www.facebook.com/profile.php?id=61553222615647" target='_blank' rel='noopener noreferrer'>
                             <img src={Facebook} className='w-[30px]' alt="Whatsapp Logo" />
                             <span>Destiny & Travel</span>
                         </a>
 
-                        <a className='flex flex-col justify-center items-center gap-2' href="mailto:destinytravelcanada@gmail.com" target='_blank'>
+                        <a className='flex flex-col justify-center items-center gap-2' href="mailto:destinytravelcanada@gmail.com" target='_blank' rel='noopener noreferrer'>
                             <img src={Gmail} className='w-[30px]' alt="Whatsapp Logo" />
                             <span>destinytravelcanada@gmail.com</span>
                         </a>
