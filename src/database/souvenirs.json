@@ -1,13 +1,41 @@
 [
-    { 
-        "id": 1, 
-        "title": "Souvernir Name", 
-        "s_description": "Short description",
-        "l_description": "Long description",
-        "price": 20,
-        "image": "",
-        "SouvenirTag": [
-            "Selfcare"
+    {
+        "id": "s1",
+        "title": "Handcrafted Artisan Mug",
+        "s_description": "Bring home a piece of local craftsmanship with our handcrafted artisan mug.",
+        "l_description": "Sip your favorite beverages in style with this unique, locally-made mug. Each piece is carefully crafted by skilled artisans, making it a perfect souvenir or gift.",
+        "price": 15.99,
+        "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
+        "souvenirServices": [
+            "Local Artisan Craft",
+            "Unique Design",
+            "Dishwasher Safe"
+        ]
+    },
+    {
+        "id": "s2",
+        "title": "Cultural Tapestry Wall Hanging",
+        "s_description": "Adorn your home with a vibrant cultural tapestry.",
+        "l_description": "Add a touch of cultural richness to your space with this beautifully woven tapestry. Featuring intricate designs and vibrant colors, it's a wonderful reminder of your cultural experiences.",
+        "price": 29.99,
+        "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
+        "souvenirServices": [
+            "Cultural Artistry",
+            "Quality Fabric",
+            "Easy Hanging"
+        ]
+    },
+    {
+        "id": "s3",
+        "title": "Local Flavors Spice Set",
+        "s_description": "Bring the flavors of your travel destination to your kitchen.",
+        "l_description": "Elevate your culinary adventures with this spice set featuring authentic flavors from your travel destination. Impress your taste buds and recreate the delicious local cuisine at home.",
+        "price": 19.99,
+        "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
+        "souvenirServices": [
+            "Local Spices",
+            "Recipe Booklet",
+            "Reusable Packaging"
         ]
     }
 ]

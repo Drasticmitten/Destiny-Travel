@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Navegation from '../components/Navegation'
-import Footer from '../components/Footer'
 
 
 const CartPage = () => {
@@ -35,10 +34,10 @@ const CartPage = () => {
         return (
             <main>
                 <Navegation />
+
                 <div className='p-20'>
                     <h1>No hay elementos en el carrito.</h1>
                 </div>
-                <Footer />
             </main>
         );
     }
@@ -62,7 +61,6 @@ const CartPage = () => {
             <h1>Total: {total}</h1>
             <button onClick={clearCart}>Clear Cart</button>
             <button onClick={sendtoWhats}>Checkout</button>
-            <Footer />
         </main>
     );
 };

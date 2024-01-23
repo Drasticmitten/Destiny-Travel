@@ -1,0 +1,41 @@
+[
+    {
+        "id": "t1",
+        "title": "Adventure in the Mountains",
+        "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
+        "s_description": "Explore the breathtaking mountain landscapes.",
+        "l_description": "Embark on an adventurous journey through the majestic mountains. Experience the thrill of hiking, camping, and discovering hidden wonders.",
+        "price": 799.99,
+        "tripServices": [
+            "Guided Tours",
+            "Camping Gear",
+            "Scenic Routes"
+        ]
+    },
+    {
+        "id": "t2",
+        "title": "Sunset Beach Retreat",
+        "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
+        "s_description": "Relax and unwind on the beautiful sandy beaches.",
+        "l_description": "Escape to a paradise beach retreat. Enjoy the soothing sound of waves, breathtaking sunsets, and a peaceful atmosphere.",
+        "price": 599.99,
+        "tripServices": [
+            "Beachfront Accommodation",
+            "Sunset Yoga",
+            "Water Sports"
+        ]
+    },
+    {
+        "id": "t3",
+        "title": "Cultural City Tour",
+        "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
+        "s_description": "Immerse yourself in the rich cultural heritage of vibrant cities.",
+        "l_description": "Discover the cultural gems of bustling cities. Visit museums, historical landmarks, and savor the diverse cuisines on this enriching city tour.",
+        "price": 649.99,
+        "tripServices": [
+            "City Guides",
+            "Museum Visits",
+            "Cultural Events"
+        ]
+    }
+]

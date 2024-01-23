@@ -1,28 +1,44 @@
 [
-    { 
-        "id": 1, 
-        "title": "Package Name", 
-        "s_description": "Short description",
-        "l_description": "Long description",
-        "price": 100,
+    {
+        "id": "p1",
+        "title": "Adventure Getaway",
+        "s_description": "Explore the great outdoors with our Adventure Getaway package.",
+        "l_description": "Embark on an unforgettable adventure with our carefully curated package that includes exciting activities and comfortable accommodations.",
+        "price": 250,
         "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
         "packageServices": [
-            "Transportation",
-            "Acommodation"
+            "Guided hiking tours",
+            "Camping equipment",
+            "Meals included",
+            "Accommodation in cozy cabins"
         ]
     },
-
     {
-        "id": 2, 
-        "title": "Package Name 2", 
-        "s_description": "Short description",
-        "l_description": "Long description",
-        "price": 140,
+        "id": "p2",
+        "title": "City Explorer",
+        "s_description": "Experience the vibrant energy of the city with our City Explorer package.",
+        "l_description": "Immerse yourself in the culture and attractions of the city with our carefully crafted package that includes guided tours and comfortable stays.",
+        "price": 180,
         "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
         "packageServices": [
-            "Transportation",
-            "Acommodation"
+            "Guided city tours",
+            "Museum visits",
+            "Local cuisine experiences",
+            "Accommodation in centrally located hotels"
+        ]
+    },
+    {
+        "id": "p3",
+        "title": "Relaxation Retreat",
+        "s_description": "Indulge in tranquility and relaxation with our Relaxation Retreat package.",
+        "l_description": "Escape the hustle and bustle of everyday life and rejuvenate your mind and body with our serene package that includes spa treatments and peaceful surroundings.",
+        "price": 300,
+        "image": "https://i.ibb.co/Xk8zjb5/Dise-o-sin-t-tulo.png",
+        "packageServices": [
+            "Spa treatments",
+            "Yoga and meditation sessions",
+            "Healthy meals",
+            "Accommodation in a luxurious spa resort"
         ]
     }
-    
 ]
