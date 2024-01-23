@@ -61,7 +61,7 @@ const ItemDetails = () => {
         const message = `Hi, I'm interested in the following item:
 
 *- Name:* ${selectedItem.title}
-*- Description:* ${selectedItem.l_description}
+*- Description:* ${selectedItem.s_description}
 *- Services:* ${selectedItem[itemType + 'Services'].join(', ')}
 *- Price:* ${selectedItem.price} CAD`;
     

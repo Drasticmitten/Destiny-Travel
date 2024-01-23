@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navegation from '../components/Navegation'
 
-
 const CartPage = () => {
     const [cartItems, setCartItems] = useState([]);
 
@@ -21,22 +20,27 @@ const CartPage = () => {
         localStorage.removeItem('cart');
     };
 
-    const encodeCartItemNames = () => {
-        return cartItems.map(item => encodeURIComponent(item.title));
-    };
+    const sendToWhats = () => {
+        const message = cartItems.map(item => `
+        
+*- Name:* ${item.title}
+    *- Description:* ${item.s_description}
+    *- Price:* ${item.price} CAD`);
+    
+        const whatsappLink = `https://wa.me/573136308824?text=${encodeURIComponent(`Hi, I'm interested in the following items:${message}
 
-    const sendtoWhats = () => {
-        const encodedNames = encodeCartItemNames().join('%0A-');
-        window.open(`https://wa.me/573136308824?text=Hi%20Im%20interested%20in%20:%0A-${encodedNames}`, '_blank');
-    };
+*Total:* ${total} CAD`)}`;
+    
+        window.open(whatsappLink, '_blank');
+    };    
 
     if (!cartItems.length) {
         return (
             <main>
                 <Navegation />
 
-                <div className='p-20'>
-                    <h1>No hay elementos en el carrito.</h1>
+                <div className='p-20 flex items-center h-screen justify-center'>
+                    <h1 className='text-5xl font-bold'>Without Items in Cart</h1>
                 </div>
             </main>
         );
@@ -47,24 +51,33 @@ const CartPage = () => {
     return (
         <main>
             <Navegation />
-            <h1>Tu carrito</h1>
-            {cartItems.map((item, index) => (
-                <div className="p-20 h-screen" key={index}>
-                    <div className='flex justify-between h-full'>
-                        <img className='rounded-xl h-[200px]' src={item.image} alt="Package Img" />
-                        <h1 className="text-3xl font-semibold mb-4">{item.title}</h1>
-                        <h2 className="text-3xl font-semibold mb-4">price: {item.price}</h2>
-                        <button onClick={() => removeFromCart(index)}>Eliminar</button>
+
+            <div className="p-20 flex justify-between gap-10 h-screen">
+                <div className='flex flex-col gap-5 w-8/12 overflow-auto'>
+                    {cartItems.map((item, index) => (
+                        <div key={index}>
+                            <div className='flex justify-between gap-10 items-center border-2 p-4 rounded-xl border-[#f0f0f0]'>
+                                <img className='rounded-xl h-[60px]' src={item.image} alt="Package Img" />
+                                <h1 className="text-xl">{item.title}</h1>
+                                <h2 className="text-xl font-semibold">{item.price} CAD</h2>
+                                <button className='font-bold text-[#ff7272] hover:text-[#a73131]' onClick={() => removeFromCart(index)}>Delete</button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                <div className='w-4/12 text-center p-10'>
+                    <h1 className='text-xl'>Total Price</h1>
+                    <p className='text-5xl font-bold mt-5 mb-20'>{total} CAD</p>
+
+                    <div className='flex justify-between'>
+                        <button className='bg-[#ff7272] hover:bg-[#a73131] text-white px-4 py-2 rounded-md font-bold' onClick={clearCart}>Clear Cart</button>
+                        <button className="bg-[#25D366] hover:bg-[#075E54] text-white px-4 py-2 rounded-md font-bold" onClick={sendToWhats}>Checkout</button>
                     </div>
                 </div>
-            ))}
-            <h1>Total: {total}</h1>
-            <button onClick={clearCart}>Clear Cart</button>
-            <button onClick={sendtoWhats}>Checkout</button>
+            </div>
         </main>
     );
 };
 
 export default CartPage;
-
-            
