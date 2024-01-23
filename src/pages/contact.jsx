@@ -10,7 +10,7 @@ const Contact = () => {
         <main>
             <Navegation />
 
-            <section id='contact' className='p-20 w-full h-screen flex gap-10'>
+            <section className='p-20 w-full h-screen flex gap-10'>
                 <div className='w-8/12 bg-langford bg-cover rounded-xl bg-right-bottom flex flex-col justify-center gap-5 text-center text-white'>
                     <h1 className='text-5xl font-bold'>Peatt Road 2830</h1>
                     <p className='text-xl font-bold'>British Columbia - Canada</p>
