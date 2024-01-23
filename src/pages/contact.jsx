@@ -5,7 +5,7 @@ import Gmail from '../assets/brandslogo/gmail.svg'
 import Facebook from '../assets/brandslogo/facebook.svg'
 import Instagram from '../assets/brandslogo/instagram.svg'
 
-const contact = () => {
+const Contact = () => {
     return (
         <main>
             <Navegation />
@@ -46,4 +46,4 @@ const contact = () => {
     )
 }
 
-export default contact
+export default Contact
