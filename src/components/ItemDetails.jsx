@@ -6,16 +6,28 @@ import packagesData from '../database/packages.json';
 import tripsData from '../database/trips.json';
 import souvenirsData from '../database/souvenirs.json';
 
-function addtoCart(selectedItem) {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    cart.push(selectedItem);
-    localStorage.setItem('cart', JSON.stringify(cart));
-}
+const SuccessMessage = ({ closeMessage }) => {
+    return (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+            <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-end">
+                <p className="text-lg font-semibold mb-4">Item added to Cart successfully!</p>
+                
+                <button
+                    className="bg-[#0874bc] text-white font-bold px-4 py-2 rounded hover:bg-blue-600"
+                    onClick={closeMessage}
+                >
+                    Close
+                </button>
+            </div>
+        </div>
+    );
+};
 
 const ItemDetails = () => {
     const { id } = useParams();
     const [selectedItem, setSelectedItem] = useState(null);
     const [itemType, setItemType] = useState(null);
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     useEffect(() => {
         const packageById = packagesData.find(item => item.id.toString() === id);
@@ -37,6 +49,10 @@ const ItemDetails = () => {
         }
     }, [id]);
 
+    const closeSuccessMessage = () => {
+        setShowSuccessMessage(false);
+    };
+
     if (!selectedItem) {
         return <div>Item not Found.</div>;
     }
@@ -54,6 +70,12 @@ const ItemDetails = () => {
         window.open(whatsappLink, '_blank');
     };
     
+    const addtoCart = () => {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(selectedItem);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        setShowSuccessMessage(true);
+    };
 
     return (
         <main>
@@ -95,13 +117,15 @@ const ItemDetails = () => {
                             </button>
 
                             <button 
-                                onClick={() => addtoCart(selectedItem)}
+                                onClick={() => addtoCart()}
                                 className="bg-[#0874bc] text-white px-4 py-2 rounded-md font-bold">
                                     Add to Cart
                             </button>
 
                             <p className='font-bold text-2xl'>{selectedItem.price} CAD</p>
                         </div>
+
+                        {showSuccessMessage && <SuccessMessage closeMessage={closeSuccessMessage} />}
                     </div>
                 </div>
             </div>
